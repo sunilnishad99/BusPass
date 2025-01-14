@@ -1,0 +1,120 @@
+body {
+    line-height: 1.7;
+    color: #4d4d4d;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+::-moz-selection {
+    background: #000;
+    color: #fff;
+}
+
+::selection {
+    background: #000;
+    color: #fff;
+}
+
+a {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.border-2 {
+    border-width: 2px;
+}
+
+.text-black {
+    color: #000 !important;
+}
+
+.bg-black {
+    background: #000 !important;
+}
+
+.color-black-opacity-5 {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.color-white-opacity-5 {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.site-wrap::before {
+    -webkit-transition: .3s all ease-in-out;
+    -o-transition: .3s all ease-in-out;
+    transition: .3s all ease-in-out;
+    background: rgba(0, 0, 0, 0.6);
+    content: "";
+    position: absolute;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.offcanvas-menu .site-wrap {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.offcanvas-menu .site-wrap::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.btn:hovor,
+.btn:active,
+.btn:focus {
+    outline: none;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.btn.btn-black {
+    color: #fff;
+    background-color: #000;
+}
+
+.btn.btn-black:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+.btn.btn-primary {
+    border: 2px solid transparent;
+}
+
+.btn.btn-primary:hover {
+    border: 2px solid #000;
+    background: none !important;
+    color: #000 !important;
+}
